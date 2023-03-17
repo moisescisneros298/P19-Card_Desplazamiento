@@ -20,6 +20,7 @@ body {
   align-items: center;
   max-width: 100%;
   padding: 20px 0;
+  flex-wrap: wrap;
 }
 .container .card {
   position: relative;
@@ -29,7 +30,7 @@ body {
   border-radius: 15px;
   margin: 30px;
 }
-.container .box {
+.container .card .box {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -43,11 +44,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .box .content {
+.container .card .box .content {
   padding: 20px;
   text-align: center;
 }
-.container .box .content h2 {
+.container .card .box .content h2 {
   position: absolute;
   top: -10px;
   right: 30px;
@@ -55,20 +56,20 @@ body {
   color: rgba(0, 0, 0, 0.02);
   transition: 0.5s;
 }
-.container .box .content h3 {
+.container .card .box .content h3 {
   font-size: 1.8em;
   color: #777;
   z-index: 1;
   transition: 0.4;
 }
-.container .box .content p {
+.container .card .box .content p {
   font-size: 16px;
   font-weight: 300;
   color: #777;
   z-index: 1;
   transition: 0.4s;
 }
-.container .box .content a {
+.container .card .box .content a {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -80,22 +81,22 @@ body {
   color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.container:hover .box {
+.container .card:hover .box {
   transform: translateY(-50px);
   transition: 0.5s;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background: linear-gradient(45deg, #b95ce4, #e91e63);
   background: linear-gradient(45deg, #b95ce4, #4f29cd);
 }
-.container:hover .box .content h2 {
+.container .card:hover .box .content h2 {
   color: rgba(0, 0, 0, 0.05);
 }
-.container:hover .box .content h3 {
+.container .card:hover .box .content h3 {
   color: rgb(255, 255, 255);
 }
-.container:hover .box .content p {
+.container .card:hover .box .content p {
   color: rgb(255, 255, 255);
 }
-.container:hover .box .content a {
+.container .card:hover .box .content a {
   background: #ff568f;
 }/*# sourceMappingURL=styles.css.map */
